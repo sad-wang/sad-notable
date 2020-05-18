@@ -2,7 +2,7 @@
 tags: [Mini Program]
 title: Mini Program Tricks
 created: '2020-05-06T08:22:55.959Z'
-modified: '2020-05-07T02:20:23.612Z'
+modified: '2020-05-12T08:13:25.228Z'
 ---
 
 # Mini Program Tricks
@@ -37,3 +37,22 @@ modified: '2020-05-07T02:20:23.612Z'
 ```
 
 [获取用户信息方案介绍](https://developers.weixin.qq.com/community/develop/doc/c45683ebfa39ce8fe71def0631fad26b)
+
+### scroll-view
+
+```JavaScript
+<scroll-view scroll-x class="scrollView">
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+</scroll-view>
+```
+```Css
+.scrollView{
+  white-space: nowrap;
+}
+.item{
+  display: inline-block;
+}
+```
