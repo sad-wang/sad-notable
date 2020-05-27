@@ -2,7 +2,7 @@
 tags: [JavaScript]
 title: JS Tricks
 created: '2020-05-19T02:12:15.694Z'
-modified: '2020-05-19T02:12:45.370Z'
+modified: '2020-05-27T11:01:20.640Z'
 ---
 
 # JS Tricks
@@ -43,3 +43,5 @@ a.push(4,5,6);
 var a = [1,2,3];
 var b = [4,5,6];
 var newA = [...a,...b]
+
+forEach()、every()、some()
