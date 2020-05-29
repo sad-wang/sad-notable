@@ -2,7 +2,7 @@
 tags: [JavaScript]
 title: JavaScript 全解
 created: '2020-05-25T09:02:24.065Z'
-modified: '2020-05-27T10:59:25.437Z'
+modified: '2020-05-29T10:40:32.795Z'
 ---
 
 # JavaScript 全解
@@ -32,7 +32,7 @@ c.sad(3)
 ```JavaScript
 // 输出打印结果
 3.toString() // error
-3..toStrign() // 3
+3..toString() // 3
 3...toString() // error
 ```
 
@@ -65,5 +65,29 @@ let safeGet = (data, target) => {
   })
   console.log(result)
 }
+```
+```JavaScript
+function sad () {}
+const a = {}
+const b = Object.prototype
+console.log(a.prototype === b)
+console.log(Object.getPrototypeOf(a) === b)
+console.log(sad.prototype === Object.getPrototypeOf(sad))
+```
+> 解析：
+
+```JavaScript
+let SAD = function () {}
+Object.prototype.a = () => {
+  console.log('sad')
+}
+Function.prototype.b = () => {
+  console.log('happy')
+}
+var sad = new SAD()
+SAD.a() // sad
+SAD.b() // happy
+sad.a() // sad
+sad.b() // error
 ```
 
