@@ -2,7 +2,7 @@
 tags: [JavaScript]
 title: JavaScript 全解
 created: '2020-05-25T09:02:24.065Z'
-modified: '2020-05-29T10:40:32.795Z'
+modified: '2020-06-02T03:09:26.427Z'
 ---
 
 # JavaScript 全解
@@ -89,5 +89,16 @@ SAD.a() // sad
 SAD.b() // happy
 sad.a() // sad
 sad.b() // error
+```
+> 解析：
+```JavaScript
+let arr1 = 'ab'.split('')
+let arr2 = arr1.reverse()
+let arr3 = 'abc'.split('')
+arr2.push(arr3)
+console.log(arr1.length)  // 3
+console.log(arr1.slice(-1)) // [a, b, c]
+console.log(arr2.length)  // 3
+console.log(arr2.slice(-1)) // [a, b, c]
 ```
 
