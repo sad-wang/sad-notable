@@ -2,7 +2,7 @@
 tags: [JavaScript]
 title: JavaScript 全解
 created: '2020-05-25T09:02:24.065Z'
-modified: '2020-06-02T03:09:26.427Z'
+modified: '2020-06-03T10:38:22.087Z'
 ---
 
 # JavaScript 全解
@@ -100,5 +100,9 @@ console.log(arr1.length)  // 3
 console.log(arr1.slice(-1)) // [a, b, c]
 console.log(arr2.length)  // 3
 console.log(arr2.slice(-1)) // [a, b, c]
+```
+
+```
+// Object.seal 和 Object.freeze 方法的区别
 ```
 
