@@ -2,7 +2,7 @@
 tags: [HappyWriting]
 title: 数据库文档 beta1.0
 created: '2020-06-18T07:36:32.337Z'
-modified: '2020-06-18T08:44:14.836Z'
+modified: '2020-06-22T09:43:30.823Z'
 ---
 
 # 数据库文档 beta1.0
@@ -75,12 +75,19 @@ modified: '2020-06-18T08:44:14.836Z'
             },
             ...
         ],
-        library: [String,...]         // 视频库
+        library: [  // 课程视频素材
+          {
+                cover_fileID: String,  // 视频封面图片
+                video_fileID: String,          // 视频 URL
+                titile: String        // 视频标题
+          },
+          ...
+        ]
     },
     ...
 ]
 ```
-## user | 课程表
+## user | 用户表
 ### 字段
 | 字段名 | 类型 | 描述 |
 |  ----  | ----  | ---- |
